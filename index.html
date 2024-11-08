@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>the Fronion - News that Doesn’t Stink</title>
+	<link rel="stylesheet" href="js/vendor/splide-4.1.3/css/splide.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+	<img src="img/fronion-logo.png" width="250" alt="the Fronion: News That Doesn’t Stink">
+</header>
+
+<main>
+	<section id="top-news">
+		<h1>Today’s Top News</h1>
+		<h2>Entertainers Support Sporks</h2>
+		<p>Hollywood, CA: Celebrities are coming out in droves to support the use of sporks. This shift is based on recent public reports of how environmentally friendly sporks are (they replace both spoons and forks so they consume less materials and take less energy to clean). Some question though if celebrities are honestly trying to be good stewards of the environment, or if they just looking to get free press. Even though they may be exploiting this issue to get us to write about them, we still did it because it could benefit Mother Earth. Just think of all the obsessed fans that will use sporks just because Paris Hilton does!</p>
+		
+		<h2>Michael Bolton and Kenny G in Bar Fight</h2>
+		<p>Beverly Hills, CA: No Synthesizers Were Harmed In The Incident. In an escalation of their 20-year feud, smooth jazz musicians Michael Bolton and Kenny G came to blows yesterday. While it is not known what sparked the confrontation, witnesses allegedly heard Kenny G shout, “Now who’s smooth?” as he crashed a bar stool over Bolton’s head. Waitresses claim that the pair was very drunk and, though they had not been sitting together, had both been drinking watermelon martinis. Police did not arrest either entertainer, stating that, “The wedgies were well deserved”.</p>
+	</section>
+
+	<div id="more-news">
+		<!-- carousel slideshow widget html code -->
+		<section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+			<div class="splide__track">
+			  <ul class="splide__list">
+				<li class="splide__slide">
+				  <img src="img/can.jpg" alt="">
+				</li>
+				<li class="splide__slide">
+				  <img src="img/clown.jpg" alt="">
+				</li>
+				<li class="splide__slide">
+				  <img src="img/dog.jpg" alt="">
+				</li>
+				<li class="splide__slide">
+				  <img src="img/duck.jpg" alt="">
+				</li>
+				<li class="splide__slide">
+				  <img src="img/horse.jpg" alt="">
+				</li>
+				<li class="splide__slide">
+				  <img src="img/remote.jpg" alt="">
+				</li>
+				<li class="splide__slide">
+				  <img src="img/tricycle.jpg" alt="">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		  
+		  
+		  <ul id="thumbnails" class="thumbnails">
+			<li class="thumbnail">
+			  <img src="img/can.jpg" alt="">
+			</li>
+			<li class="thumbnail">
+			  <img src="img/clown.jpg" alt="">
+			</li>
+			<li class="thumbnail">
+			  <img src="img/dog.jpg" alt="">
+			</li>
+			<li class="thumbnail">
+			  <img src="img/duck.jpg" alt="">
+			</li>
+			<li class="thumbnail">
+				<img src="img/horse.jpg" alt="">
+			  </li>
+			  <li class="thumbnail">
+				<img src="img/remote.jpg" alt="">
+			  </li>
+			  <li class="thumbnail">
+				<img src="img/tricycle.jpg" alt="">
+			  </li>
+		  </ul>
+	</div>
+</main>
+
+<footer>
+	<p class="copyright">© Copyright The Fronion</div>
+</footer>
+
+<script src="js/vendor/splide-4.1.3/js/splide.min.js"></script>
+
+<script>
+		// Collects LI elements:
+	var thumbnails = document.getElementsByClassName( 'thumbnail' );
+
+
+	for ( var i = 0; i < thumbnails.length; i++ ) {
+	initThumbnail( thumbnails[ i ], i );
+	}
+
+
+	// The function to initialize each thumbnail.
+	function initThumbnail( thumbnail, index ) {
+	thumbnail.addEventListener( 'click', function () {
+		// move the carousel
+	} );
+	}
+		var splide = new Splide( '#main-carousel', {
+	pagination: false,
+	perPage: 2,
+	gap: "10px",
+	autoplay: true,
+	interval: 2000,
+	speed: 800,
+	
+	} );
+
+
+	splide.mount();
+		
+
+</script>
+</body>
+</html>
